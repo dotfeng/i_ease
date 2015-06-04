@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_comment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_comment_reply_writer_and_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="3.0dip"
+        android:paddingLeft="10.0dip"
+        android:paddingRight="10.0dip"
+        android:paddingTop="3.0dip"
+        android:lineSpacingMultiplier="1.2"
+        android:text="海盗 回复 小花 ：你是猪啊"
+        android:textColor="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/rl_comment_check_all"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/comments_rest_view"
+            android:layout_width="40.0dip"
+            android:layout_height="30dp" >
+
+            <ImageView
+                android:layout_width="12.666992dip"
+                android:layout_height="3.3329773dip"
+                android:layout_centerInParent="true"
+                android:src="@drawable/comments_ellipsis" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_comment_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@id/comments_rest_view"
+            android:gravity="center_vertical"
+            android:paddingRight="6.0dip"
+            android:text="查看全部评论(7)"
+            android:textColor="#ff333333"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

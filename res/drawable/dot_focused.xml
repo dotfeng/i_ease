@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval" >
+<!-- 这是自定义控件的属性  shape 是形状的意思   这里 形状为圆形   solid：实体 实心 就是填充颜色 设置颜色
+	corner 是半径的意思  就是 设置这个圆的半径大小  -->
+    <solid android:color="#FF8000" />
+
+    <corners android:radius="5dip" />
+
+</shape>

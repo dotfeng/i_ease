@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_back"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/green" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="话题"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+        
+        <ImageView
+            android:id="@+id/add_topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/add" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.iecampus.view.PullToRefreshView
+            android:id="@+id/main_pull_refresh_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/list_back"
+            android:orientation="vertical" >
+
+            <com.iecampus.view.PinnedHeaderListView
+                android:id="@+id/pinnedListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@android:color/white"
+                android:divider="@drawable/listitem_divide" >
+            </com.iecampus.view.PinnedHeaderListView>
+        </com.iecampus.view.PullToRefreshView>
+
+        <ImageView
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@null"
+            android:src="@drawable/refresh"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/notify_view"
+            android:layout_width="fill_parent"
+            android:layout_height="25.0dip"
+            android:layout_marginLeft="6.0dip"
+            android:layout_marginRight="6.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/bg_notify"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/notify_view_text"
+                style="@style/notify_view_style"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@null"
+                android:textIsSelectable="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

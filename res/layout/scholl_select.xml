@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F7E4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="85dp"
+        android:background="@color/green" >
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:background="#00000000"
+            android:text="取消"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="请选择学校"
+            android:textColor="#ffffff"
+            android:textSize="18dp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/title"
+            android:background="@color/white" />
+        <!-- 设置这个,让他获得焦点 -->
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="0dip"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <RelativeLayout
+            android:id="@+id/serch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line"
+            android:layout_margin="7dp"
+            android:background="#ffffff" >
+
+            <ImageView
+                android:id="@+id/serch_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/serch" />
+
+            <EditText
+                android:id="@+id/serch_content"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="28dp"
+                android:background="@drawable/serch_edit"
+                android:hint="请输入关键词"
+                android:textColorHint="@color/green"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/serch_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="我们将为你推荐本校的二手商品，目前仅支持武汉理工大学"
+        android:textColor="#C9C1A4"
+        android:textSize="12dp" />
+
+    <ListView
+        android:id="@+id/scholl_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="#C9C1A4"
+        android:dividerHeight="1dp" >
+    </ListView>
+
+</LinearLayout>

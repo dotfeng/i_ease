@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_back"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/detail_userimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/shifan" />
+
+    <TextView
+        android:id="@+id/detail_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@id/detail_userimg"
+        android:text="没有比较好的平台了" />
+
+    <TextView
+        android:id="@+id/detail_lou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dp"
+        android:text="1#" />
+
+</RelativeLayout>

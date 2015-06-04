@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="yin">#BCBBBB</color>
+    <color name="yellow">#F79307</color>
+    <color name="main">#7EC5D3</color>
+    <color name="list_back">#F6F7E4</color>
+    <color name="school_name">#9C9C9C</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#ffffff</color>
+    <color name="f8">#F8F8F8</color>
+    <color name="pink">#D0C02F</color>
+    <color name="his">#CB3447</color>
+    <color name="green">#46C43C</color>
+    <color name="reds">#F0310F</color>
+    <color name="black">#000000</color>
+    <color name="huise">#C0C0C0</color>
+    <color name="transparent">#00000000</color>
+    <color name="tabbar_bg">#FCF8FC</color>
+    <color name="pub_text">#ff0e5986</color>
+    <color name="news_divider_day">#ffdddddd</color>
+    <color name="activity_bg_color">#fff5f5f5</color>
+    <color name="news_date_text_color">#ff454545</color>
+    <color name="success_stroke_color">#20BCA6</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="float_transparent">#66000000</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="actionbar_color">#019587</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="lightgrey">#999999</color>
+
+</resources>

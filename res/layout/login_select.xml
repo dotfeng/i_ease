@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/login_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/login_select_loginbt"
+        android:text="已有账号，马上登陆" 
+        android:onClick="login_click"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/vistor_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"
+        android:onClick="vistor_click"
+        android:background="@drawable/login_select_visitbt"
+        android:text="我先逛逛" />
+
+</LinearLayout>

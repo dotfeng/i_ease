@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爱易校园</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">请选择你的系别</string>
+    <string name="home">首页</string>
+    <string name="message">消息</string>
+    <string name="me">关于我</string>
+    <string name="search">分类</string>
+    <string name="more">话题</string>
+    <string name="pull_to_refresh_pull_label" translatable="false">向下拉动可以刷新</string>
+    <string name="pull_to_refresh_release_label" translatable="false">松开可以刷新</string>
+    <string name="pull_to_refresh_footer_pull_label" translatable="false">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_release_label" translatable="false">松开加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="pull_to_refresh_refreshing_label">正在载入…</string>
+    <string name="select_scholl">请选择一个城市</string>
+    <string name="notify_news_update">发现%1$d条更新</string>
+    <string name="failedconnection">网络连接不可用，请检查网络设置。</string>
+    <string name="detail">\u3000\u3000i易（爱易）校园是为在校大学生的二手物品和相关服务的交易提供便捷的交易平台。产品由武汉理工大学诺尔团队开发和维护，业务载体为手机客户端（APP)。发布出售与求购的消息，在线浏览二手市场的资源与需求；\n\u3000\u3000 1.在二手物品交易的基础上新增校园服务的出售与求购的功能，通过校园服务可以实现约会、交友，校友互助等功能；\n\u3000\u3000 2.评价商品并查看别人对于商品的评价；\n\u3000\u3000 3.添加自定义话题，或参与他人的话题讨论；\n\u3000\u3000 4.实时接收校内外新闻。</string>
+    <string name="aboutus">\u3000\u3000i易校园由武汉理工大学诺尔团队开发和维护。诺尔团队秉承便利校园的宗旨、旨在提供更高效、更快捷的校园平台，促进武汉理工大学及其他高校学生之间的交易。</string>
+    <string name="connectwithus">i易校园服务中心 332929823</string>
+    <string name="dialog_ok">确定</string>
+    <string name="request_fail_text">网络请求失败</string>
+     <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+
+</resources>

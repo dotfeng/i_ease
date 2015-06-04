@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_newsfragment"
+    android:orientation="vertical" >
+
+    <include layout="@layout/item_news_date" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/article_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="8.0dip"
+            android:paddingTop="10.0dip" >
+
+            <RelativeLayout
+                android:id="@+id/article_top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10.0dip"
+                android:paddingRight="7.0dip" >
+
+                <ImageView
+                    android:id="@+id/right_image"
+                    android:layout_width="86dip"
+                    android:layout_height="60dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginTop="3.0dip"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/item_title"
+                   android:textSize="17.0sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/right_image"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/contentpre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_title"
+                    android:maxLines="2"
+                    android:paddingRight="7.0dip"
+                    android:paddingTop="10dip" />
+
+                <TextView
+                    android:id="@+id/left_contentpre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_title"
+                    android:layout_toLeftOf="@id/right_image"
+                    android:maxLines="2"
+                    android:paddingRight="7.0dip"
+                    android:paddingTop="10dip" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/item_image_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6.0dip"
+                android:orientation="horizontal"
+                android:paddingRight="8.0dip" >
+
+                <ImageView
+                    android:id="@+id/item_image_0"
+                    style="@style/item_news_image_style" />
+
+                <View style="@style/item_news_image_space_style" />
+
+                <ImageView
+                    android:id="@+id/item_image_1"
+                    style="@style/item_news_image_style" />
+
+                <View style="@style/item_news_image_space_style" />
+
+                <ImageView
+                    android:id="@+id/item_image_2"
+                    style="@style/item_news_image_style" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/large_image"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6.0dip"
+                android:paddingRight="7.0dip"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/news_divider_day" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:background="#ffdddddd" />
+
+</LinearLayout>

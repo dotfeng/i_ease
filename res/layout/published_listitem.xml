@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/img"
+        android:text="学生门票大量出售" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/title"
+        android:layout_centerVertical="true"
+        android:text="$135"
+        android:textColor="@color/red" />
+
+    <TextView
+        android:id="@+id/browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:text="153人浏览" />
+
+    <TextView
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/price"
+        android:layout_alignRight="@id/browse"
+        android:text="正在出售"
+        android:textColor="@color/green" />
+
+    <Button
+        android:id="@+id/complete"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/img"
+        android:layout_alignLeft="@id/price"
+        android:background="@drawable/about_me_btn_back"
+        android:text="交易完成"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/img"
+        android:layout_alignRight="@id/state"
+        android:background="@drawable/about_me_btn_back"
+        android:focusable="false"
+        android:text="修改"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/signed"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/successed" />
+
+</RelativeLayout>
